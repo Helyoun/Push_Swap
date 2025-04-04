@@ -6,17 +6,11 @@
 /*   By: hamel-yo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/27 10:22:36 by hamel-yo          #+#    #+#             */
-/*   Updated: 2025/04/04 01:12:17 by hamel-yo         ###   ########.fr       */
+/*   Updated: 2025/04/04 01:34:56 by hamel-yo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-void	ft_sort_two(t_stack **a)
-{
-	if (ft_check_stack(*a) == 0)
-		ra(a);
-}
 
 void	ft_sort_tree(t_stack **a)
 {
