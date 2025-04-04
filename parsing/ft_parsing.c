@@ -6,7 +6,7 @@
 /*   By: hamel-yo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/21 06:37:37 by hamel-yo          #+#    #+#             */
-/*   Updated: 2025/04/02 22:17:59 by hamel-yo         ###   ########.fr       */
+/*   Updated: 2025/04/04 01:22:54 by hamel-yo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,8 +71,8 @@ void	ft_make_node(int nb, t_stack **stack)
 void	ft_fe(t_stack **stack)
 {
 	ft_free_list(stack);
-	write(1, "Error\n", 6);
-	exit(0);
+	write(2, "Error\n", 6);
+	exit(1);
 }
 
 void	ft_split(char *str, t_stack **stack, int *len)

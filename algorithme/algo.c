@@ -6,7 +6,7 @@
 /*   By: hamel-yo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/25 20:21:23 by hamel-yo          #+#    #+#             */
-/*   Updated: 2025/04/01 20:05:19 by hamel-yo         ###   ########.fr       */
+/*   Updated: 2025/04/04 01:11:40 by hamel-yo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,9 +56,9 @@ void	ft_algo(t_stack **a, t_stack **b, int middle, int i)
 {
 	t_stack	*node;
 
-	if (i > 5)
+	if (i > 20)
 		ft_push_from_a(a, b, middle);
-	if (i >= 3)
+	else if (i >= 3)
 		ft_sort_five(a, b, i);
 	ft_push_from_b(a, b);
 	node = ft_min(*a);

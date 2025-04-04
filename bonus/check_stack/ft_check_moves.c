@@ -6,7 +6,7 @@
 /*   By: hamel-yo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/28 09:52:45 by hamel-yo          #+#    #+#             */
-/*   Updated: 2025/04/02 22:54:13 by hamel-yo         ###   ########.fr       */
+/*   Updated: 2025/04/04 01:17:46 by hamel-yo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,11 @@ void	ft_check_moves(char *line, t_stack **a, t_stack **b)
 	i = i + ft_check_swap(line, a, b);
 	if (i == 0)
 	{
-		write(1, "Error\n", 6);
+		write(2, "Error\n", 6);
 		free(line);
 		ft_free_list(a);
 		ft_free_list(b);
-		exit(0);
+		exit(1);
 	}
 	free(line);
 }

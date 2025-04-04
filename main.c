@@ -6,7 +6,7 @@
 /*   By: hamel-yo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/27 10:22:36 by hamel-yo          #+#    #+#             */
-/*   Updated: 2025/04/02 22:22:08 by hamel-yo         ###   ########.fr       */
+/*   Updated: 2025/04/04 01:12:17 by hamel-yo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,10 +43,11 @@ void	ft_sort_tree(t_stack **a)
 
 void	ft_sort_five(t_stack **a, t_stack **b, int i)
 {
-	if (i == 5)
+	while (i > 3)
+	{
 		pb(b, a);
-	if (i >= 4)
-		pb(b, a);
+		i--;
+	}
 	ft_sort_tree(a);
 	if (b != NULL)
 		ft_push_from_b(a, b);
