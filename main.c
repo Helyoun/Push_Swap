@@ -6,13 +6,13 @@
 /*   By: hamel-yo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/27 10:22:36 by hamel-yo          #+#    #+#             */
-/*   Updated: 2025/04/04 01:34:56 by hamel-yo         ###   ########.fr       */
+/*   Updated: 2025/04/04 02:04:27 by hamel-yo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	ft_sort_tree(t_stack **a)
+void	ft_sort_three(t_stack **a)
 {
 	int	head;
 	int	body;
@@ -42,7 +42,7 @@ void	ft_sort_five(t_stack **a, t_stack **b, int i)
 		pb(b, a);
 		i--;
 	}
-	ft_sort_tree(a);
+	ft_sort_three(a);
 	if (b != NULL)
 		ft_push_from_b(a, b);
 }
